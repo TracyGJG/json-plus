@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JsonPlus test harness</title>
+  </head>
+  <body>
+    <script type="module">
+      import { JsonPlus } from './json-plus.js';
+
+      const testData = {
+        bigInt: 1234567890n,
+        date: new Date(2025, 11, 13, 14, 15, 16),
+      };
+
+      console.dir(testData);
+
+      const jsonString = JsonPlus().stringify(testData, 2);
+      console.log(jsonString);
+
+      const jsonObject = JsonPlus().parse(jsonString);
+      console.dir(jsonObject);
+    </script>
+  </body>
+</html>
