@@ -1,6 +1,6 @@
 {
   "name": "json-plus",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An extended JSON serialiser/deserialiser",
   "main": "json-plus.js",
   "type": "module",
@@ -15,7 +15,9 @@
     "url": "git+https://github.com/TracyGJG/json-plus.git"
   },
   "keywords": [
-    "JSON"
+    "JSON",
+    "BIGINT",
+    "DATE"
   ],
   "author": "TGJ Gilmore",
   "license": "CC0-1.0",
