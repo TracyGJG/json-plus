@@ -8,7 +8,7 @@
     "test": "node --test",
     "watch": "node --test --watch",
     "coverage": "c8 node --test",
-    "coverage:ui": "http-server ./coverage/"
+    "coverage:ui": "http-server ./coverage -o lcov-report/"
   },
   "repository": {
     "type": "git",
