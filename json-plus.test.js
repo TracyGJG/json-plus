@@ -1,7 +1,7 @@
 import { describe, it, beforeEach, afterEach } from 'node:test';
 import assert from 'node:assert';
 
-import { JsonPlus } from './json-plus.js';
+import JsonPlus from './json-plus.js';
 
 describe('JSON PLUS', () => {
   describe('in basic mode', () => {

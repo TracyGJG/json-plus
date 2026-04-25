@@ -1,7 +1,7 @@
 const BIGINT = /^-?[1-9]\d{0,15}n$/;
 const ISO_DATE = /^((\+|-)\d\d)?\d{4}(-\d\d){2}T(\d\d:){2}\d\d\.\d{3}Z$/;
 
-function JsonPlus(propertyTransformers = {}) {
+export default function JsonPlus(propertyTransformers = {}) {
   const _propertyTransformers = {
     revivers: {},
     replacers: {},
@@ -31,5 +31,3 @@ function JsonPlus(propertyTransformers = {}) {
     return 'bigint' === typeof val ? `${val}n` : val;
   }
 }
-
-export { JsonPlus };
